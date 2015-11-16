@@ -1,8 +1,17 @@
 require_relative "../minitest_helper"
 require_relative "Gear"
+require_relative "diameterizable_interface_test"
+
+class DiameterizableDoubleTest < Minitest::Test
+  include DiameterizableInterfaceTest
+
+  def setup
+    @object = DiameterizableDouble.new
+  end
+end
 
 class DiameterizableDouble
-  def diameter
+  def width
     10
   end
 end

@@ -31,7 +31,7 @@ class Trip
   attr_reader :bicycles, :customers, :vehicle
 
   def prepare(preparers)
-    prepares.each do |preparer|
+    preparers.each do |preparer|
       preparer.prepare_trip(self)
     end
   end

@@ -4,6 +4,8 @@ require_relative "bicycle_interface_test"
 require_relative "bicycle_subclass_test"
 
 class StubbedBike < Bicycle
+  include BicycleSubclassTest
+
   def default_tire_size
     0
   end
